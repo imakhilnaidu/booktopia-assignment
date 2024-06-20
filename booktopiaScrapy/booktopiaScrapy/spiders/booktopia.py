@@ -43,19 +43,31 @@ class BookTopia(Spider):
 
     def start_requests(self):
         try:
+            # Getting file path for input_list.csv
             file_path = os.path.join(os.getcwd(), "booktopiaScrapy/files/input_list.csv")
+
+            # Reading input_list.csv
             isbn_df = pd.read_csv(file_path)
-            for isbn in isbn_df["ISBN13"][:100]:
+
+            # Looping through the first 100 rows of input_list.csv
+            for isbn in isbn_df["ISBN13"][100:150]:
+
+                # Making a request to get the search url
                 yield Request(SEARCH_URL.format(isbn), headers=self.headers, callback=self.parse,
                               errback=self.error_callback, cb_kwargs={"isbn": isbn})
         except Exception as e:
             self.logger.error(f"Got error at start request: {e}")
 
+    # Function to parse the search url
     def parse(self, response, **kwargs):
         isbn = kwargs.get("isbn")
         try:
             response_data = response.json()
+
+            # Getting the product url
             path = response_data.get("pageProps", {}).get("__N_REDIRECT", "")
+
+            # Making a request to get the product url
             if path:
                 yield Request(PRODUCT_URL.format(path), method="GET", headers=self.headers, callback=self.parse_product,
                               errback=self.error_callback, cb_kwargs={"isbn": isbn})
@@ -77,6 +89,7 @@ class BookTopia(Spider):
         except Exception as e:
             self.logger.error(f"Got error at parse() - {e}")
 
+    # Function to parse the product
     def parse_product(self, response, **kwargs):
         isbn = kwargs.get("isbn")
         try:
@@ -99,6 +112,7 @@ class BookTopia(Spider):
         except Exception as e:
             self.logger.error(f"Got error at parse_product() - {e}")
 
+    # Function to handle errors
     def error_callback(self, failure):
         isbn = failure.request.cb_kwargs.get("isbn")
         response = failure.value.response
