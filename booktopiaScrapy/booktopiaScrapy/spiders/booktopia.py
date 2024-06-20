@@ -76,14 +76,14 @@ class BookTopia(Spider):
                 data = {
                     "ISBN - 13": isbn,
                     "Title of the Book": "book not found",
-                    "Book Type": "-",
-                    "Original Price": "-",
-                    "Discounted Price": "-",
-                    "ISBN - 10": "-",
-                    "Author": "-",
-                    "Published Date": "-",
-                    "Publisher": "-",
-                    "No. of Pages": "-",
+                    "Book Type": "",
+                    "Original Price": "",
+                    "Discounted Price": "",
+                    "ISBN - 10": "",
+                    "Author": "",
+                    "Published Date": "",
+                    "Publisher": "",
+                    "No. of Pages": "",
                 }
                 yield data
         except Exception as e:
@@ -121,13 +121,13 @@ class BookTopia(Spider):
             data = {
                 "ISBN - 13": isbn,
                 "Title of the Book": "book not found",
-                "Book Type": "-",
-                "Original Price": "-",
-                "Discounted Price": "-",
-                "ISBN - 10": "-",
+                "Book Type": "",
+                "Original Price": "",
+                "Discounted Price": "",
+                "ISBN - 10": "",
                 "Author": "-",
-                "Published Date": "-",
-                "Publisher": "-",
-                "No. of Pages": "-",
+                "Published Date": "",
+                "Publisher": "",
+                "No. of Pages": "",
             }
             yield data
