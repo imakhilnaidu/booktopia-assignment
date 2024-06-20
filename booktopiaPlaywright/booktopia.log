@@ -1,0 +1,56 @@
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+ERROR:root:Timeout while processing ISBN: 9780307762528
+ERROR:root:Timeout while processing ISBN: 9780061763403
+ERROR:root:Timeout while processing ISBN: 9781322117171
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+ERROR:root:Timeout while trying to search for ISBN: 9780307762528
+ERROR:root:Timeout while trying to search for ISBN: 9780743422277
+ERROR:root:Timeout while trying to search for ISBN: 9780241290002
+ERROR:root:Timeout while trying to search for ISBN: 9780061763403
+ERROR:root:Timeout while trying to search for ISBN: 9780463983096
+ERROR:root:Timeout while trying to search for ISBN: 9780241365984
+ERROR:root:Timeout while trying to search for ISBN: 9781322117171
+ERROR:root:Timeout while trying to search for ISBN: 9780141911717
+ERROR:root:Timeout while trying to search for ISBN: 9780141930169
+ERROR:root:Timeout while trying to search for ISBN: 9780307762528
+ERROR:root:Timeout while trying to search for ISBN: 9780743422277
+ERROR:root:Timeout while trying to search for ISBN: 9780241290002
+ERROR:root:Timeout while trying to search for ISBN: 9780061763403
+ERROR:root:Timeout while trying to search for ISBN: 9780463983096
+ERROR:root:Timeout while trying to search for ISBN: 9780241365984
+ERROR:root:Timeout while trying to search for ISBN: 9781322117171
+ERROR:root:Timeout while trying to search for ISBN: 9780141911717
+ERROR:root:Timeout while trying to search for ISBN: 9780141930169
+ERROR:root:Timeout while trying to search for ISBN: 9780061763403
+ERROR:root:Timeout while processing ISBN: 9781322117171
+ERROR:root:Timeout while processing ISBN: 9780307762528
+ERROR:root:Timeout while trying to search for ISBN: 9780241290002
+ERROR:root:Timeout while trying to search for ISBN: 9780061763403
+ERROR:root:Timeout while trying to search for ISBN: 9780463983096
+ERROR:root:Timeout while trying to search for ISBN: 9780241365984
+ERROR:root:Timeout while trying to search for ISBN: 9781322117171
+ERROR:root:Timeout while trying to search for ISBN: 9780141911717
+ERROR:root:Timeout while trying to search for ISBN: 9780141930169
+ERROR:root:Timeout while processing ISBN: 9780307762528
+ERROR:root:Timeout while processing ISBN: 9780061763403
+ERROR:root:Timeout while processing ISBN: 9781322117171
+ERROR:root:Timeout while processing ISBN: 9780307762528
+ERROR:root:Timeout while processing ISBN: 9780061763403
+ERROR:root:Timeout while processing ISBN: 9781322117171
+ERROR:root:Timeout while processing ISBN: 9781250316783
+ERROR:root:Timeout while processing ISBN: 9780230739673
+ERROR:root:Timeout while processing ISBN: 9780956308641
+ERROR:root:Timeout while processing ISBN: 9780470901038
+ERROR:root:Timeout while processing ISBN: 9780698185890
+ERROR:root:Error while processing ISBN: 9780857202994, Error: time data '18 Augu 2011' does not match format '%d %B %Y'
+ERROR:root:Timeout while processing ISBN: 9781310869686
+ERROR:root:Timeout while processing ISBN: 9780330469364
+ERROR:root:Timeout while processing ISBN: 9780230225916
+ERROR:root:Timeout while processing ISBN: 9780804141116

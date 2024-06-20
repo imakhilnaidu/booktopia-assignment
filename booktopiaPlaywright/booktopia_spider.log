@@ -1,0 +1,6 @@
+2024-06-20 14:20:37,034 - asyncio - ERROR - Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
+2024-06-20 14:31:52,896 - asyncio - ERROR - Future exception was never retrieved
+future: <Future finished exception=Error('Connection closed')>
+playwright._impl._api_types.Error: Connection closed
